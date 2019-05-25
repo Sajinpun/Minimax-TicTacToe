@@ -1,0 +1,185 @@
+body{
+    /*background-color: white;*/
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
+.container{
+    /*background-color: white;*/
+    background-color: black;
+    padding:0px 2px 40px 2px;
+}
+
+#gameState{
+    /*color:rgba(189, 172, 149, 0.77);*/
+    /*color: rgb(154, 73, 73);*/
+    background: #781111;
+    margin: 3px 0px 3px 0px;
+}
+
+.gameBoard{
+    width: 50%;
+    /*font-size: 500%;*/
+    /*background-color: white;*/
+}
+table{
+   /* border: 1px solid black;*/
+}
+
+
+td{
+    width: 33.33%;
+    position: relative;
+    /*border: 5px solid red;*/
+    text-align: center;
+}
+
+#grid0{
+    border: 4px solid red;
+    border-width: 0px 4px 4px 0px;
+}#grid1{
+    border: 4px solid red;
+    border-width: 0px 4px 4px 4px;
+}#grid2{
+    border: 4px solid red;
+    border-width: 0px 0px 4px 4px;
+}#grid3{
+    border: 4px solid red;
+    border-width: 4px 4px 4px 0px;
+}#grid4{
+    border: 4px solid red;
+    border-width: 4px 4px 4px 4px;
+}#grid5{
+    border: 4px solid red;
+    border-width: 4px 0px 4px 4px;
+}#grid6{
+    border: 4px solid red;
+    border-width: 4px 4px 0px 0px;
+}#grid7{
+    border: 4px solid red;
+    border-width: 4px 4px 0px 4px;
+}#grid8{
+    border: 4px solid red;
+    border-width: 4px 0px 0px 4px;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+td .content {
+  color:black;
+  position: absolute;
+  padding-top: 25%;
+  font-size: 650%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #781111;
+}
+
+.btn-primary{
+    background: #bf1818;
+    color: black;
+    text-align:center;
+    font-size:200%;
+    border: 2px solid black;
+}
+
+.btn-primary:hover{
+    background: red;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-primary:active{
+    background:red !important;
+    color: rgba(0, 0, 0, 0.66) !important;
+}
+
+.startButton{
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+    td .content{
+        font-size: 300% !important; 
+    }
+    
+    #gameState{
+        font-size: 130% !important;
+        margin-bottom: 50px !important;
+    }
+    
+    .startButton{
+        margin-top: 50px !important;
+    }
+
+}
+
+@media only screen and (max-width:250px){
+    td .content{
+         font-size: 350% !important; 
+    }
+    
+    #gameState{
+        font-size: 170% !important;
+    }
+    .gameBoard{
+        width: 100%; !important;
+    }
+}
+@media only screen and (max-width: 450px) and (min-width: 251px){
+    td .content{
+         font-size: 400% !important; 
+    }
+    
+    #gameState{
+        font-size: 170% !important;
+    }
+    .gameBoard{
+        width: 100%; !important;
+    }
+    
+}
+
+@media only screen and (max-width: 649px) and (min-width: 451px){
+     td .content{
+         font-size: 700% !important;
+    }
+    
+    .gameBoard{
+        width: 100%; !important;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 649px){
+     td .content{
+         font-size: 450% !important;
+    }
+    
+   /* gameBoard{
+        width: 200%; !important;
+    }*/
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 801px){
+    td .content{
+         font-size: 450% !important;
+    }
+    gameBoard{
+        width: 100%; !important;
+    }
+}
+
+@media only screen and(max-width: 1300px) and (min-width: 992px){
+    td .content{
+         font-size: 200% !important;
+    }
+   /* .gameBoard{
+        width: 40%; !important;
+    }*/
+}
